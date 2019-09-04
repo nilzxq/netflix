@@ -80,6 +80,31 @@ def getMovies(file_path):
     #ncol控制图例所列的列数，默认为1
     plt.legend(loc=7,bbox_to_anchor=(1.3,1.0),ncol=3,fancybox=True,shadow=True,fontsize=6)
     plt.show()
+
+def getUsers(file_path):
+    users=pd.read_table(
+        file_path,
+        header=None,
+        sep="::",
+        names=["userID","gender","age","Occupation","zip-cpde"],
+        engine='python',
+    )
+    print("userID的范围为：<{},{}>".format(min(users["userID"]),max(users["userID"])))
+    print("数据总条数为:\n{}".format(users.count()))
+
+    userGender=users["gender"].groupby(users["gender"]).count()
+    print(userGender)
+
+    plt.axes(aspect=1)
+    plt.pie(
+        x=userGender.values,
+        labels=userGender.keys(),
+        autopct="%3.1f%%"
+    )
+    plt.legend(bbox_to_anchor=(1.0,1.0))
+    plt.show()
+
 if __name__ == "__main__":
-    getRatings("data/ml-1m/ratings.dat")
-    getMovies("data/ml-1m/movies.dat")
+   # getRatings("data/ml-1m/ratings.dat")
+    # getMovies("data/ml-1m/movies.dat")
+    getUsers("data/ml-1m/users.dat")

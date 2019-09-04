@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eefa941b-f251-4f8d-bfbf-f759e053906b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Include/3-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Include/data/ml-1m/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Include/data/ml-1m/movies.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Include/data/ml-1m/ratings.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Include/data/ml-1m/users.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/netflix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/netflix.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/3-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Include/3-1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
