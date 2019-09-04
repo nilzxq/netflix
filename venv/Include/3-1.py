@@ -104,6 +104,28 @@ def getUsers(file_path):
     plt.legend(bbox_to_anchor=(1.0,1.0))
     plt.show()
 
+    usersAge=users["age"].groupby(users["age"]).count()
+    print(usersAge)
+
+    plt.plot(
+        usersAge.keys(),
+        usersAge.values,
+        label="用户年龄信息展示",
+        linewidth=3,
+        color="r",
+        marker="o",
+        markerfacecolor="blue",
+        markersize=12,
+    )
+
+    #图上添加数字
+    for x,y in zip(usersAge.keys(),usersAge.values):
+        plt.text(x,y+10,"%.0f"%y,ha="center",va="bottom",fontsize=12)
+    plt.xlabel("用户年龄")
+    plt.ylabel("年龄段对应的人数")
+    plt.title("用户年龄段人数统计")
+    plt.show()
+
 if __name__ == "__main__":
    # getRatings("data/ml-1m/ratings.dat")
     # getMovies("data/ml-1m/movies.dat")
