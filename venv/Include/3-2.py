@@ -29,6 +29,19 @@ def getRatings(file_path):
     plt.title("每种评分下对应的人数统计图")
     plt.show()
 
+def getUsersMess(file_path):
+    print("filePath is '{}'".format(file_path))
+    users=pd.read_table(
+        file_path,
+        header=0,
+        sep=";",
+        encoding="ISO-8859-1"
+    )
+    print("前5条数据为：\n{}".format(users.head(5)))
+    print("总的数据记录条数为：\n{}".format(users.count()))
+    print("年龄的最大最小值：<{},{}>"
+          .format(users["Age"].min(), users["Age"].max()))
 
 if __name__ == "__main__":
-        getRatings("data/bookcrossings/BX-Book-Ratings.csv")
+        #getRatings("data/bookcrossings/BX-Book-Ratings.csv")
+        getUsersMess("data/bookcrossings/BX-Users.csv")
